@@ -4902,7 +4902,7 @@ const seed = [
 /* Utilities */
 function save(key,val){ localStorage.setItem(key, JSON.stringify(val)); }
 function load(key){ try{ return JSON.parse(localStorage.getItem(key))||null }catch(e){return null } }
-function fmtDate(ts){ const d=new Date(ts); return d.toLocaleDateString('ru-RU') + ' ' + d.toLocaleTimeString('ru-RU',{hour:'2-digit',minute:'2-digit'}); }
+function fmtDate(ts){ const d=new Date(ts); return d.toLocaleDateString('ru-RU'); }
 function renderStars(n){ return '<span class="stars">'+('★'.repeat(n)) + ('☆'.repeat(5-n)) + '</span>'; }
 
 /* Storage keys (часть А) */
